@@ -2,7 +2,7 @@
     <div class='app-container'>
         
         <!--顶部Header区域-->
-        <mt-header fixed title="fixed top"></mt-header>
+        <mt-header fixed title="Vue Project"></mt-header>
 
 
         <!--中间路由 router-view区域-->
@@ -42,6 +42,7 @@
 .app-container{
 	overflow-x: hidden;
     padding-top: 40px; /*解决动画时下边栏和上边栏消失问题*/
+	padding-bottom: 50px;
 }
 
 
@@ -59,3 +60,4 @@
 	transition: all 0.5s ease 
 }
 </style>
+
