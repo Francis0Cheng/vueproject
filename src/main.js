@@ -9,6 +9,8 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
 //设置请求路径
 Vue.http.options.root = 'http://www.liulongbin.top:3005';
+//设置全局post时候表单数据格式组织形式
+Vue.http.options.emulateJSON = true
 
 import { Header, Swipe, SwipeItem, Button} from 'mint-ui';
 
@@ -20,6 +22,7 @@ Vue.component(Button.name, Button);
 
 import './lib/mui/css/mui.css'
 import './lib/mui/css/mui-extra.css'
+
 
 //定义全局过滤器
 

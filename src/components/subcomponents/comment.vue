@@ -60,7 +60,7 @@ import {Toast} from "mint-ui"
                     Toast("请输入评论内容")
                     return
                 }
-                this.$http.post('api/news/postcomments/',{'news_id':this.id,'content':this.cmtContent.trim()}).then(res=>{
+                this.$http.post('api/news/postcomments/',{'news_id':this.id,'content':this.cmtContent.trim()}).then(res=>{  //trim清楚空格
                     console.log(res.body)
                     if(res.body.status == 0){
                         Toast(res.body.message)
